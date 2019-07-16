@@ -16,6 +16,7 @@
     <!--[if lte IE 7]> <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
 
     <title>Kinder | Childcare Nursery School Daycentre</title>
+    <link rel="stylesheet" href="sites/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.base.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.menus.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.messages.css">
@@ -29,9 +30,6 @@
     <link rel="stylesheet" href="sites/all/themes/theme764/css/field.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/node.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/poll.css">
-    <link rel="stylesheet" href="sites/all/themes/theme764/css/search.css">
-    <link rel="stylesheet" href="sites/all/themes/theme764/css/user.css">
-    <link rel="stylesheet" href="sites/all/themes/theme764/css/forum.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/views.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/colorbox_style.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/ctools.css">
@@ -42,34 +40,25 @@
     <link rel="stylesheet" href="sites/all/themes/theme764/css/superfish-navbar.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/views_slideshow.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/boilerplate.css">
+    <link rel="stylesheet" href="sites/all/themes/theme764/css/style.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/maintenance-page.css">
-    <style type="text/css" media="screen">
-        @import url("http://livedemo00.template-help.com/drupal_43465/sites/all/themes/theme764/css/style.css?mis7a6");
-    </style>
 
 
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/misc/jquery.js?v=1.4.4"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/misc/jquery.once.js?v=1.2"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/misc/drupal.js?mis7a6"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/misc/ui/jquery.effects.core.min.js?v=1.8.7"></script>
-    
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/libraries/flexslider/jquery.flexslider-min.js?v=1.8"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/modules/back_to_top/js/back_to_top.js?mis7a6"></script>
-
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/libraries/colorbox/jquery.colorbox-min.js?mis7a6"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/modules/colorbox/js/colorbox.js?mis7a6"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/modules/colorbox/styles/default/colorbox_style.js?mis7a6"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/modules/getlocations/js/getlocations_colorbox.js?mis7a6"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/modules/panels/js/panels.js?mis7a6"></script>
-
-
-    
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/misc/textarea.js?v=7.18"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/modules/flexslider/assets/js/flexslider.load.js?mis7a6"></script>
     <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_43465/sites/all/modules/flexslider/flexslider_views_slideshow/js/flexslider_views_slideshow.js?mis7a6"></script>
-    <script type="text/javascript">
-        
-    </script>
+
 
     <script type="text/javascript">
         <!--//--><![CDATA[//><!--
@@ -292,301 +281,174 @@
 
         <div id="page">
 
-            <header id="header" role="banner" class="clearfix">
-                <div class="section-1 clearfix">
-                    <div class="col1">
-                        <a href="/drupal_43465/" title="Home" rel="home" id="logo">
-                            <img src="http://livedemo00.template-help.com/drupal_43465/sites/all/themes/theme764/logo.png" alt="Home" />
+            <header id="header" role="banner" class="clearfix container">
+                <div class="row clearfix">
+                    <div class="col-lg-5 col-md-7 col-sm-7">
+                        <a href="index.html" title="Home" rel="home" id="logo">
+                            <img class="logo" src="sites/all/themes/theme764/images/logo.png" alt="Home" />
                         </a>
-
                     </div>
-                    <div class="col2">
-                        <div class="region region-user-menu">
-                            <section id="block-system-user-menu" class="block block-system block-menu block-odd">
-
-                                
-
-                            </section>
-                            <!-- /.block -->
-                            <div id="block-menu-menu-secondary-menu" class="block block-menu block-even">
-
-                               
-
+                    <div class="col-lg-7 col-md-5 col-sm-5">
+                        <div class="dropdown lang">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Azərbaycan dili
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Azərbaycan dili</a>
+                                <a class="dropdown-item" href="#">Русский язык</a>
+                                <a class="dropdown-item" href="#">English</a>
                             </div>
-                            <!-- /.block -->
                         </div>
                     </div>
                 </div>
 
-                <div class="section-2 clearfix">
-                    <div class="region region-menu">
-                        <div id="block-superfish-1" class="block block-superfish block-odd">
-
-                            <div class="content">
-                                <ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-7 sf-parent-items-1 sf-single-items-6">
-                                    <li id="menu-201-1" class="first odd sf-item-1 sf-depth-1 sf-no-children">
-                                        <a href="index.html" class="sf-depth-1  active">Ana Səhifə</a>
-                                    </li>
-                                    <li id="menu-1997-1" class="middle even sf-item-2 sf-depth-1 sf-no-children">
-                                        <a href="about.html" title="" class="sf-depth-1 ">Haqqimizda</a>
-                                    </li>
-                                    <li id="menu-668-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children">
-                                        <a href="blog.html" title="" class="sf-depth-1 ">Xidmətlər</a>
-                                    </li>
-                                    <li id="menu-1998-1" class="middle even sf-item-4 sf-depth-1 sf-no-children">
-                                        <a href="news-events.html" title="" class="sf-depth-1 ">Proqramlar</a>
-                                    </li>
-                                    <li id="menu-1998-1" class="middle even sf-item-4 sf-depth-1 sf-no-children">
-                                        <a href="news-events.html" title="" class="sf-depth-1 ">Kurslar</a>
-                                    </li>
-                                    <li id="menu-1999-1" class="middle even sf-item-6 sf-depth-1 sf-no-children">
-                                        <a href="portfolio.html" title="" class="sf-depth-1 ">Qalereya</a>
-                                    </li>
-                                    <li id="menu-442-1" class="last odd sf-item-7 sf-depth-1 sf-no-children">
-                                        <a href="contacts.html" title="" class="sf-depth-1 ">Əlaqə</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.content -->
-
-                        </div>
-                        <!-- /.block -->
+                <nav class="navbar navbar-expand-xl navbar-light justify-content-center py-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="superfish-1" class="navbar-nav">
+                            <li id="menu-201-1" class="nav-item sf-item-1">
+                                <a class="nav-link" href="index.html">Ana Səhifə</a>
+                            </li>
+                            <li id="menu-1997-1" class="nav-item sf-item-2">
+                                <a class="nav-link sf-depth-1" href="about.html">Haqqımızda</a>
+                            </li>
+                            <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link sf-depth-1" href="blog.html">Xidmətlər</a>
+                            </li>
+                            <li id="menu-1998-1" class="nav-item sf-item-4">
+                                <a class="nav-link sf-depth-1" href="news-events.html">Proqramlar</a>
+                            </li>
+                            <li id="menu-1998-1" class="nav-item sf-item-5">
+                                <a class="nav-link sf-depth-1" href="news-events.html">Kurslar</a>
+                            </li>
+                            <li id="menu-1999-1" class="nav-item sf-item-6">
+                                <a class="nav-link sf-depth-1" href="portfolio.html">Qalereya</a>
+                            </li>
+                            <li id="menu-442-1" class="nav-item sf-item-7">
+                                <a class="nav-link sf-depth-1" href="contacts.html">Əlaqə</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                    
+                </nav>
 
-                <div class="section-3 clearfix">
-                    <div class="region region-header">
-                        <div id="block-views-slider-block-1" class="block block-views block-even">
-
-                            <div class="content">
-                                <div class="view view-slider view-id-slider view-display-id-block_1 view-dom-id-c593164d85591fd1d90bb16805e0997f">
-
-                                    <div class="view-content">
-
-                                        <div class="skin-default">
-
-                                            <div id="flexslider_views_slideshow_main_slider-block_1" class="flexslider_views_slideshow_main views_slideshow_main">
-                                                <div class="flex-nav-container">
-                                                    <div class="flexslider">
-                                                        <ul id="flexslider_views_slideshow_slider-block_1" class="flexslider-views-slideshow-main-frame slides">
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-1 views-row-odd">
-
-                                                                <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide1.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
-                                                                    <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
-
-                                                                <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide2.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
-                                                                    <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
-
-                                                                <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide3.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
-                                                                    <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even">
-
-                                                                <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide4.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
-                                                                    <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-5 views_slideshow_cycle_hidden views-row-odd">
-
-                                                                <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide5.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
-                                                                    <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                <div class="row">
+                    <div class="col-lg-12 padding-left">
+                        <div id="flexslider_views_slideshow_main_slider-block_1" class="flexslider_views_slideshow_main views_slideshow_main">
+                            <div class="flex-nav-container">
+                                <div class="flexslider">
+                                    <ul id="flexslider_views_slideshow_slider-block_1" class="flexslider-views-slideshow-main-frame slides">
+                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-odd">
+                                            <div class="views-field views-field-field-slide-image">
+                                                <div class="field-content content-img">
+                                                    <img src="gallery/slide1.png" width="1049" height="470" alt="" />
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-
+                                        </li>
+                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
+                                            <div class="views-field views-field-field-slide-image">
+                                                <div class="field-content content-img">
+                                                    <img src="gallery/slide2.png" width="1049" height="470" alt="" />
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
+                                            <div class="views-field views-field-field-slide-image">
+                                                <div class="field-content">
+                                                    <img src="gallery/slide3.png" width="1049" height="470" alt="" />
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
+                                            <div class="views-field views-field-field-slide-image">
+                                                <div class="field-content">
+                                                    <img src="gallery/slide4.png" width="1049" height="470" alt="" />
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
+                                            <div class="views-field views-field-field-slide-image">
+                                                <div class="field-content">
+                                                    <img src="gallery/slide5.png" width="1049" height="470" alt="" />
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!-- /.content -->
-
                         </div>
-                        <!-- /.block -->
                     </div>
                 </div>
-                <!-- /.section -->
-
             </header>
             <!-- /#header -->
 
-            <div id="main-wrapper">
-                <div id="main" class="clearfix">
-
-                    <div id="content" class="column" role="main">
-                        <div class="section">
-
-                            <div class="tabs"></div>
-
-                            <div class="region region-content">
-                                <div id="block-system-main" class="block block-system block-odd">
-
-                                    <div class="content">
-                                        <div class="panel-flexible panels-flexible-1 clearfix" id="contacts">
-                                            <div class="panel-flexible-inside panels-flexible-1-inside">
-                                                <div class="panels-flexible-row panels-flexible-row-1-main-row panels-flexible-row-first clearfix">
-                                                    <div class="inside panels-flexible-row-inside panels-flexible-row-1-main-row-inside panels-flexible-row-inside-first clearfix">
-                                                        <div class="panels-flexible-region panels-flexible-region-1-center panels-flexible-region-first panels-flexible-region-last">
-                                                            <div class="inside panels-flexible-region-inside panels-flexible-region-1-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
-                                                                <div class="panel-pane pane-node">
-
-                                                                    <h2 class="pane-title">Our Location</h2>
-
-                                                                    <div class="pane-content">
-                                                                        <article id="node-81" class="node node-maps node-odd published with-comments clearfix">
-
-                                                                            <header>
-
-                                                                                <h2><a href="/drupal_43465/?q=node/81"></a></h2>
-
-                                                                            </header>
-
-                                                                            <div class="content">
-                                                                                <div class="field field-name-field-map field-type-getlocations-fields field-label-hidden">
-                                                                                    <div class="field-items">
-                                                                                        <div class="field-item even">
-                                                                                            <div class="location vcard">
-                                                                                                <div class="adr"></div>
-                                                                                            </div>
-                                                                                            <div class="getlocations_map_canvas" id="getlocations_map_canvas_key_1" style="width: 100%; height: 300px"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!-- /.content -->
-
-                                                                            <footer>
-                                                                            </footer>
-
-                                                                        </article>
-                                                                        <!-- /.node -->
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+            <div class="container-fluid my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="panel-pane pane-contact">
+                                <h2 class="pane-title">Contact Form</h2>
+                                <div class="pane-content">
+                                    <form class="user-info-from-cookie contact-form" action="" method="post" id="contact-site-form" accept-charset="UTF-8">
+                                        <div>
+                                            <div class="form-item form-type-textfield form-item-name">
+                                                <label for="edit-name">Your name <span class="form-required" title="This field is required.">*</span></label>
+                                                <input type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required" />
+                                            </div>
+                                            <div class="form-item form-type-textfield form-item-mail">
+                                                <label for="edit-mail">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
+                                                <input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" />
+                                            </div>
+                                            <div class="form-item form-type-textfield form-item-subject">
+                                                <label for="edit-subject">Subject <span class="form-required" title="This field is required.">*</span></label>
+                                                <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="255" class="form-text required" />
+                                            </div>
+                                            <div class="form-item form-type-textarea form-item-message">
+                                                <label for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
+                                                    <div class="form-textarea-wrapper resizable">
+                                                        <textarea id="edit-message" name="message" cols="60" rows="5" class="form-textarea required"></textarea>
                                                     </div>
-                                                </div>
-                                                <div class="panels-flexible-row panels-flexible-row-1-1 panels-flexible-row-last clearfix ">
-                                                    <div class="inside panels-flexible-row-inside panels-flexible-row-1-1-inside panels-flexible-row-inside-last clearfix">
-                                                        <div class="panels-flexible-region panels-flexible-region-1-contacts_region panels-flexible-region-first panels-flexible-region-last contacts-region">
-                                                            <div class="inside panels-flexible-region-inside panels-flexible-region-1-contacts_region-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
-                                                                <div class="panel-pane pane-contact">
-
-                                                                    <h2 class="pane-title">Contact Form</h2>
-
-                                                                    <div class="pane-content">
-                                                                        <form class="user-info-from-cookie contact-form" action="/drupal_43465/?q=contacts" method="post" id="contact-site-form" accept-charset="UTF-8">
-                                                                            <div>
-                                                                                <div class="form-item form-type-textfield form-item-name">
-                                                                                    <label for="edit-name">Your name <span class="form-required" title="This field is required.">*</span></label>
-                                                                                    <input type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required" />
-                                                                                </div>
-                                                                                <div class="form-item form-type-textfield form-item-mail">
-                                                                                    <label for="edit-mail">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
-                                                                                    <input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" />
-                                                                                </div>
-                                                                                <div class="form-item form-type-textfield form-item-subject">
-                                                                                    <label for="edit-subject">Subject <span class="form-required" title="This field is required.">*</span></label>
-                                                                                    <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="255" class="form-text required" />
-                                                                                </div>
-                                                                                <div class="form-item form-type-textarea form-item-message">
-                                                                                    <label for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
-                                                                                    <div class="form-textarea-wrapper resizable">
-                                                                                        <textarea id="edit-message" name="message" cols="60" rows="5" class="form-textarea required"></textarea>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <input type="hidden" name="form_build_id" value="form-wZBRIRGl9EMSjWlH_v9QkYF4IpYuVJvL2lWGyFvnrgU" />
-                                                                                <input type="hidden" name="form_id" value="contact_site_form" />
-                                                                                <div class="form-actions form-wrapper" id="edit-actions">
-                                                                                    <input type="submit" id="edit-submit" name="op" value="Send message" class="form-submit" />
-                                                                                </div>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="panel-separator"></div>
-                                                                <div class="panel-pane pane-custom pane-1 contact-information">
-
-                                                                    <h2 class="pane-title">Contact Information</h2>
-
-                                                                    <div class="pane-content">
-                                                                        <p><strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</strong>
-                                                                            <br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque et quasi architecto beatae vitae dicta sunt explicabo. Mornunc odio gravida atcursus neus a lorem. Maecenas tristique orci ac sem. Duis ultric pharetra magna. Donec accumsan malesuada orcic sit amet eros. Lorem ipsum dolor sit amet onsectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor dapibus eget.</p>
-                                                                        <p>The Company Name Inc.
-                                                                            <br /> 9870 St Vincent Place,
-                                                                            <br /> Glasgow, DC 45 Fr 45.</p>
-                                                                        <p>Telephone:+1 800 603 6035
-                                                                            <br /> FAX:+1 800 889 9898
-                                                                            <br /> E-mail: <a href="/cdn-cgi/l/email-protection#c4a9a5ada884a0a1a9aba8adaaafeaabb6a3"><span class="__cf_email__" data-cfemail="ddb0bcb4b19db9b8b0b2b1b4b3b6f3b2afba">[email&#160;protected]</span></a></p>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <input type="hidden" name="form_build_id" value="form-wZBRIRGl9EMSjWlH_v9QkYF4IpYuVJvL2lWGyFvnrgU" />
+                                                <input type="hidden" name="form_id" value="contact_site_form" />
+                                                <div class="form-actions form-wrapper" id="edit-actions">
+                                                    <input type="submit" id="edit-submit" name="op" value="Send message" class="form-submit" />
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- /.content -->
-
+                                    </form>
                                 </div>
-                                <!-- /.block -->
                             </div>
-
                         </div>
-                        <!-- /.section -->
+                        <div class="col-lg-6">
+                            <div class="panel-pane pane-custom pane-1 contact-information">
+                                <h2 class="pane-title">Contact Information</h2>
+                                <div class="pane-content">
+                                    <p><strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</strong>
+                                        <br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque et quasi architecto beatae vitae dicta sunt explicabo. Mornunc odio gravida atcursus neus a lorem. Maecenas tristique orci ac sem. Duis ultric pharetra magna. Donec accumsan malesuada orcic sit amet eros. Lorem ipsum dolor sit amet onsectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor dapibus eget.</p>
+                                    <p>The Company Name Inc.
+                                        <br /> 9870 St Vincent Place,
+                                        <br /> Glasgow, DC 45 Fr 45.</p>
+                                    <p>Telephone:+1 800 603 6035
+                                        <br /> FAX:+1 800 889 9898
+                                        <br /> E-mail: <a href="#">
+                                                <span class="__cf_email__" data-cfemail="ddb0bcb4b19db9b8b0b2b1b4b3b6f3b2afba">[email&#160;protected]</span></a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- /#content -->
-
                 </div>
-                <!-- /#main -->
             </div>
-            <!-- /#main-wrapper -->
 
             <footer id="footer" role="contentinfo">
-                <div class="footer-wrapper clearfix">
+                <div class="footer-wrapper container clearfix">
                     <div class="region region-footer">
                         <div id="block-block-5" class="block block-block block-even">
 
                             <div class="content">
-                                Kinder &copy; 2019 &nbsp;&nbsp;&nbsp; <a href="?q=node/79">Privacy Policy</a> </div>
+                                Kinder &copy; 2019 &nbsp;&nbsp;&nbsp; <a href="#">Privacy Policy</a> 
+                            </div>
                             <!-- /.content -->
 
                         </div>
@@ -603,50 +465,9 @@
     <!-- /#page-wrapper -->
 
     <!--LIVEDEMO_00 -->
-
-    <script data-cfasync="false" src="sites/all/themes/theme764/js/email-decode.min.js"></script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-7078796-5']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-    <script type="text/javascript">
-        <!--//--><![CDATA[//><!--
-        var addthis_config = {
-            "services_compact": "blogger,delicious,digg,evernote,friendfeed,linkedin,myspace,stumbleupon,tumblr,virb,more",
-            "data_track_clickback": false,
-            "ui_508_compliant": false,
-            "ui_click": false,
-            "ui_cobrand": "",
-            "ui_delay": 0,
-            "ui_header_background": "",
-            "ui_header_color": "",
-            "ui_open_windows": false,
-            "ui_use_css": true,
-            "ui_use_addressbook": false,
-            "ui_language": "en"
-        }
-        var addthis_share = {
-                "templates": {
-                    "twitter": "{{title}} {{url}} via @AddThis"
-                }
-            }
-            //--><!]]>
-    </script>
+    <script src="sites/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="sites/bootstrap/js/popper.min.js"></script>
+    <script src="sites/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
-<!-- Google Tag Manager -->
-<noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager -->
-
 </html>

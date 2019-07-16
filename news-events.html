@@ -9,14 +9,14 @@
 <head>
 
     <meta charset="utf-8" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://livedemo00.template-help.com/drupal_43465/sites/all/themes/theme764/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
 
     <!--[if lte IE 7]> <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
 
     <title>News &amp; Events | Kinder</title>
-
+    <link rel="stylesheet" href="sites/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.base.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.menus.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.messages.css">
@@ -30,9 +30,6 @@
     <link rel="stylesheet" href="sites/all/themes/theme764/css/field.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/node.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/poll.css">
-    <link rel="stylesheet" href="sites/all/themes/theme764/css/search.css">
-    <link rel="stylesheet" href="sites/all/themes/theme764/css/user.css">
-    <link rel="stylesheet" href="sites/all/themes/theme764/css/forum.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/views.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/colorbox_style.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/ctools.css">
@@ -145,6 +142,12 @@
                 "marker_width": "600",
                 "marker_height": "600"
             },
+            "back_to_top": {
+                "back_to_top_button_trigger": 100,
+                "back_to_top_prevent_on_mobile": true,
+                "back_to_top_prevent_in_admin": true,
+                "back_to_top_button_type": "image"
+            },
             "viewsSlideshow": {
                 "slider-block_1": {
                     "methods": {
@@ -198,78 +201,65 @@
 
         <div id="page">
 
-            <header id="header" role="banner" class="clearfix">
-                <div class="section-1 clearfix">
-                    <div class="col1">
-                        <a href="/drupal_43465/" title="Home" rel="home" id="logo">
-                            <img src="http://livedemo00.template-help.com/drupal_43465/sites/all/themes/theme764/logo.png" alt="Home" />
+            <header id="header" role="banner" class="clearfix container">
+                <div class="row clearfix">
+                    <div class="col-lg-5">
+                        <a href="index.html" title="Home" rel="home" id="logo">
+                            <img class="logo" src="sites/all/themes/theme764/images/logo.png" alt="Home" />
                         </a>
-
                     </div>
-                    <div class="col2">
-                        <div class="region region-user-menu">
-                            <section id="block-system-user-menu" class="block block-system block-menu block-odd">
-
-                               
-                                <!-- /.content -->
-
-                            </section>
-                            <!-- /.block -->
-                            <div id="block-menu-menu-secondary-menu" class="block block-menu block-even">
-
-                                <div class="content">
-                                    
-                                </div>
-                                <!-- /.content -->
-
+                    <div class="col-lg-7">
+                        <div class="dropdown lang">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Azərbaycan dili
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Azərbaycan dili</a>
+                                <a class="dropdown-item" href="#">Русский язык</a>
+                                <a class="dropdown-item" href="#">English</a>
                             </div>
-                            <!-- /.block -->
                         </div>
                     </div>
                 </div>
 
-                <div class="section-2 clearfix">
-                    <div class="region region-menu">
-                        <div id="block-superfish-1" class="block block-superfish block-odd">
-
-                            <div class="content">
-                                <ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-7 sf-parent-items-1 sf-single-items-6">
-                                    <li id="menu-201-1" class="first odd sf-item-1 sf-depth-1 sf-no-children">
-                                        <a href="index.html" class="sf-depth-1  active">Ana Səhifə</a>
-                                    </li>
-                                    <li id="menu-1997-1" class="middle even sf-item-2 sf-depth-1 sf-no-children">
-                                        <a href="about.html" title="" class="sf-depth-1 ">Haqqimizda</a>
-                                    </li>
-                                    <li id="menu-668-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children">
-                                        <a href="blog.html" title="" class="sf-depth-1 ">Xidmətlər</a>
-                                    </li>
-                                    <li id="menu-1998-1" class="middle even sf-item-4 sf-depth-1 sf-no-children">
-                                        <a href="news-events.html" title="" class="sf-depth-1 ">Proqramlar</a>
-                                    </li>
-                                    <li id="menu-1998-1" class="middle even sf-item-4 sf-depth-1 sf-no-children">
-                                        <a href="news-events.html" title="" class="sf-depth-1 ">Kurslar</a>
-                                    </li>
-                                    <li id="menu-1999-1" class="middle even sf-item-6 sf-depth-1 sf-no-children">
-                                        <a href="portfolio.html" title="" class="sf-depth-1 ">Qalereya</a>
-                                    </li>
-                                    <li id="menu-442-1" class="last odd sf-item-7 sf-depth-1 sf-no-children">
-                                        <a href="contacts.html" title="" class="sf-depth-1 ">Əlaqə</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.content -->
-
-                        </div>
-                        <!-- /.block -->
+                <nav class="navbar navbar-expand-xl navbar-light justify-content-center py-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="superfish-1" class="navbar-nav">
+                            <li id="menu-201-1" class="nav-item sf-item-1">
+                                <a class="nav-link" href="index.html">Ana Səhifə</a>
+                            </li>
+                            <li id="menu-1997-1" class="nav-item sf-item-2">
+                                <a class="nav-link sf-depth-1" href="about.html">Haqqımızda</a>
+                            </li>
+                            <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link sf-depth-1" href="blog.html">Xidmətlər</a>
+                            </li>
+                            <li id="menu-1998-1" class="nav-item sf-item-4">
+                                <a class="nav-link sf-depth-1" href="news-events.html">Proqramlar</a>
+                            </li>
+                            <li id="menu-1998-1" class="nav-item sf-item-5">
+                                <a class="nav-link sf-depth-1" href="news-events.html">Kurslar</a>
+                            </li>
+                            <li id="menu-1999-1" class="nav-item sf-item-6">
+                                <a class="nav-link sf-depth-1" href="portfolio.html">Qalereya</a>
+                            </li>
+                            <li id="menu-442-1" class="nav-item sf-item-7">
+                                <a class="nav-link sf-depth-1" href="contacts.html">Əlaqə</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                    
+                </nav>
 
                 <div class="section-3 clearfix">
                     <div class="region region-header">
                         <div id="block-views-slider-block-1" class="block block-views block-even">
 
                             <div class="content">
-                                <div class="view view-slider view-id-slider view-display-id-block_1 view-dom-id-d438ebec9bc61019e1bed5aa615f951b">
+                                <div class="view view-slider view-id-slider view-display-id-block_1 view-dom-id-a7c794f8f31525364ef709e59cb9f8a4">
 
                                     <div class="view-content">
 
@@ -279,58 +269,43 @@
                                                 <div class="flex-nav-container">
                                                     <div class="flexslider">
                                                         <ul id="flexslider_views_slideshow_slider-block_1" class="flexslider-views-slideshow-main-frame slides">
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-1 views-row-odd">
+                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-odd">
 
                                                                 <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide1.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
-                                                                    <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
+                                                                    <div class="field-content content-img">
+                                                                        <img src="gallery/slide1.png" width="1049" height="470" alt="" />
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
 
                                                                 <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide2.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
-                                                                    <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
+                                                                    <div class="field-content content-img">
+                                                                        <img src="gallery/slide2.png" width="1049" height="470" alt="" />
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
 
                                                                 <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide3.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
                                                                     <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
+                                                                        <img src="gallery/slide3.png" width="1049" height="470" alt="" />
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even">
+                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
 
                                                                 <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide4.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
                                                                     <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
+                                                                        <img src="gallery/slide4.png" width="1049" height="470" alt="" />
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-5 views_slideshow_cycle_hidden views-row-odd">
+                                                            <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
 
                                                                 <div class="views-field views-field-field-slide-image">
-                                                                    <div class="field-content"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/slide5.png" width="1049" height="470" alt="" /></div>
-                                                                </div>
-                                                                <div class="views-field views-field-body">
                                                                     <div class="field-content">
-                                                                        <p><strong>High</strong> <b>quality of care</b> <span>and education provided</span></p>
+                                                                        <img src="gallery/slide5.png" width="1049" height="470" alt="" />
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -350,254 +325,229 @@
                     </div>
                 </div>
                 <!-- /.section -->
-
+                
             </header>
             <!-- /#header -->
 
-            <div id="main-wrapper">
-                <div id="main" class="clearfix">
-
-                    <aside id="sidebar-second" class="column sidebar" role="complementary">
-                        <div class="section">
-                            <div class="region region-sidebar-second">
-                                <section id="block-comment-recent" class="block block-comment block-odd">
-                                        <div class="penci_latest_news_widget">
-                                                <h4 class="widget-title penci-border-arrow">
-                                                    <span class="inner-arrow">Recent Posts</span>
-                                                </h4>
-                                                <div class="side-newsfeed">
-                                                    <div class="penci-feed">
-                                                        <div class="side-item">
-                                                            <div class="side-image">
-                                                                <a href="#" class="small-fix-size">
-                                                                    <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
-                                                                </a>
+            <div class="container-fluid my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="section">
+                                <h1 class="title" id="page-title">News &amp; Events</h1>
+                                <div class="tabs"></div>
+                                <div class="region region-content">
+                                    <div id="block-system-main" class="block block-system block-odd">
+                                        <div class="content">
+                                            <div class="view view-news-events view-id-news_events view-display-id-page view-dom-id-7134ac97ce4b59d6d7928beca4139cbf">
+                                                <div class="view-content">
+                                                    <div class="views-row views-row-odd views-row-first">
+                                                        <article id="node-86" class="node node-news-events node-teaser node-odd published with-comments node-teaser clearfix">
+                                                            <header>
+                                                                <h2>
+                                                                    <a href="note.html">Proin bibendum ante</a>
+                                                                </h2>
+                                                                <p class="submitted">
+                                                                    Submitted by <span class="username">admin</span> on
+                                                                    <time pubdate datetime="2013-02-19T17:16:09">
+                                                                        Tue, 02/19/2013 - 17:16 </time>
+                                                                </p>
+                                                            </header>
+                                                            <div class="content">
+                                                                <div class="field field-name-field-image-events field-type-image field-label-hidden">
+                                                                    <div class="field-items">
+                                                                        <div class="field-item even">
+                                                                            <img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/styles/228x208/public/bigstockphoto_Five_Happy_Kids_1998645_0.jpg" width="228" height="208" alt="" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                                                    <div class="field-items">
+                                                                        <div class="field-item even">
+                                                                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dapibus sapien vel turpis suscipit eget vestibulum turpis dapibus. Donec tempus, orci eget aliquet blandit, ligula nibh adipiscing augue, quis semper mi lectus non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in augue nibh. Maecenas eget neque eu dui tempor imperdiet eu a lacus.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="side-item-text">
-                                                                <h4 class="side-title-post">
-                                                                    <a href="#">Memories from Last Summer</a>
-                                                                </h4>
-                                                                <span class="side-item-meta">
-                                                                    <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
-                                                                </span>
+                                                            <footer>
+                                                                <ul class="links inline">
+                                                                    <li class="node-readmore first last">
+                                                                        <a href="note.html" rel="tag" title="Proin bibendum ante">Read more
+                                                                            <span class="element-invisible"> about Proin bibendum ante</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </footer>
+                                                        </article>
+                                                        <article id="node-86" class="node node-news-events node-teaser node-odd published with-comments node-teaser clearfix">
+                                                            <header>
+                                                                <h2>
+                                                                    <a href="note.html">Proin bibendum ante</a>
+                                                                </h2>
+                                                                <p class="submitted">
+                                                                    Submitted by <span class="username">admin</span> on
+                                                                    <time pubdate datetime="2013-02-19T17:16:09">
+                                                                        Tue, 02/19/2013 - 17:16 </time>
+                                                                </p>
+                                                            </header>
+                                                            <div class="content">
+                                                                <div class="field field-name-field-image-events field-type-image field-label-hidden">
+                                                                    <div class="field-items">
+                                                                        <div class="field-item even">
+                                                                            <img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/styles/228x208/public/bigstockphoto_Five_Happy_Kids_1998645_0.jpg" width="228" height="208" alt="" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                                                    <div class="field-items">
+                                                                        <div class="field-item even">
+                                                                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dapibus sapien vel turpis suscipit eget vestibulum turpis dapibus. Donec tempus, orci eget aliquet blandit, ligula nibh adipiscing augue, quis semper mi lectus non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in augue nibh. Maecenas eget neque eu dui tempor imperdiet eu a lacus.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                    
-                                                        <div class="side-item">
-                                                            <div class="side-image">
-                                                                <a href="#" class="small-fix-size">
-                                                                    <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
-                                                                </a>
+                                                            <footer>
+                                                                <ul class="links inline">
+                                                                    <li class="node-readmore first last">
+                                                                        <a href="note.html" rel="tag" title="Proin bibendum ante">Read more
+                                                                            <span class="element-invisible"> about Proin bibendum ante</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </footer>
+                                                        </article>
+                                                        <article id="node-86" class="node node-news-events node-teaser node-odd published with-comments node-teaser clearfix">
+                                                            <header>
+                                                                <h2>
+                                                                    <a href="note.html">Proin bibendum ante</a>
+                                                                </h2>
+                                                                <p class="submitted">
+                                                                    Submitted by <span class="username">admin</span> on
+                                                                    <time pubdate datetime="2013-02-19T17:16:09">
+                                                                        Tue, 02/19/2013 - 17:16 </time>
+                                                                </p>
+                                                            </header>
+                                                            <div class="content">
+                                                                <div class="field field-name-field-image-events field-type-image field-label-hidden">
+                                                                    <div class="field-items">
+                                                                        <div class="field-item even">
+                                                                            <img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/styles/228x208/public/bigstockphoto_Five_Happy_Kids_1998645_0.jpg" width="228" height="208" alt="" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                                                    <div class="field-items">
+                                                                        <div class="field-item even">
+                                                                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dapibus sapien vel turpis suscipit eget vestibulum turpis dapibus. Donec tempus, orci eget aliquet blandit, ligula nibh adipiscing augue, quis semper mi lectus non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in augue nibh. Maecenas eget neque eu dui tempor imperdiet eu a lacus.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="side-item-text">
-                                                                <h4 class="side-title-post">
-                                                                    <a href="#">Memories from Last Summer</a>
-                                                                </h4>
-                                                                <span class="side-item-meta">
-                                                                    <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                        
-                                                        <div class="side-item">
-                                                            <div class="side-image">
-                                                                <a href="#" class="small-fix-size">
-                                                                    <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
-                                                                </a>
-                                                            </div>
-                                                            <div class="side-item-text">
-                                                                <h4 class="side-title-post">
-                                                                    <a href="#">Memories from Last Summer</a>
-                                                                </h4>
-                                                                <span class="side-item-meta">
-                                                                    <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                        
-                                                        <div class="side-item">
-                                                            <div class="side-image">
-                                                                <a href="#" class="small-fix-size">
-                                                                    <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
-                                                                </a>
-                                                            </div>
-                                                            <div class="side-item-text">
-                                                                <h4 class="side-title-post">
-                                                                    <a href="#">Memories from Last Summer</a>
-                                                                </h4>
-                                                                <span class="side-item-meta">
-                                                                    <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
-                                                                </span>
-                                                            </div>
-                                                        </div>
+                                                            <footer>
+                                                                <ul class="links inline">
+                                                                    <li class="node-readmore first last">
+                                                                        <a href="note.html" rel="tag" title="Proin bibendum ante">Read more
+                                                                            <span class="element-invisible"> about Proin bibendum ante</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </footer>
+                                                        </article>
                                                     </div>
                                                 </div>
                                             </div>
-                                </section>
-                            </div>
-                        </div>
-                        <!-- /.section -->
-                    </aside>
-                    <!-- /#sidebar-second -->
-
-                    <div id="content" class="column" role="main">
-                        <div class="section">
-
-                            <h1 class="title" id="page-title">News &amp; Events</h1>
-
-                            <div class="tabs"></div>
-
-                            <div class="region region-content">
-                                <div id="block-system-main" class="block block-system block-odd">
-
-                                    <div class="content">
-                                        <div class="view view-news-events view-id-news_events view-display-id-page view-dom-id-7134ac97ce4b59d6d7928beca4139cbf">
-
-                                            <div class="view-content">
-                                                <div class="views-row views-row-1 views-row-odd views-row-first">
-                                                    <article id="node-86" class="node node-news-events node-teaser node-odd published with-comments node-teaser clearfix">
-
-                                                        <header>
-
-                                                            <h2><a href="#">Proin bibendum ante</a></h2>
-
-                                                            <p class="submitted">
-                                                                Submitted by <span class="username">admin</span> on
-                                                                <time pubdate datetime="2013-02-19T17:16:09">
-                                                                    Tue, 02/19/2013 - 17:16 </time>
-                                                            </p>
-                                                        </header>
-
-                                                        <div class="content">
-                                                            <div class="field field-name-field-image-events field-type-image field-label-hidden">
-                                                                <div class="field-items">
-                                                                    <div class="field-item even"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/styles/228x208/public/bigstockphoto_Five_Happy_Kids_1998645_0.jpg" width="228" height="208" alt="" /></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-                                                                <div class="field-items">
-                                                                    <div class="field-item even">
-                                                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dapibus sapien vel turpis suscipit eget vestibulum turpis dapibus. Donec tempus, orci eget aliquet blandit, ligula nibh adipiscing augue, quis semper mi lectus non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in augue nibh. Maecenas eget neque eu dui tempor imperdiet eu a lacus.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- /.content -->
-
-                                                        <footer>
-                                                            <ul class="links inline">
-                                                                <li class="node-readmore first last"><a href="#" rel="tag" title="Proin bibendum ante">Read more<span class="element-invisible"> about Proin bibendum ante</span></a></li>
-                                                            </ul>
-                                                        </footer>
-
-                                                    </article>
-                                                    <!-- /.node -->
-                                                </div>
-                                                <div class="views-row views-row-2 views-row-even">
-                                                    <article id="node-85" class="node node-news-events node-teaser node-even published with-comments node-teaser clearfix">
-
-                                                        <header>
-
-                                                            <h2><a href="#">Donec in aliquet erat</a></h2>
-
-                                                            <p class="submitted">
-                                                                Submitted by <span class="username">admin</span> on
-                                                                <time pubdate datetime="2013-02-19T17:15:07">
-                                                                    Tue, 02/19/2013 - 17:15 </time>
-                                                            </p>
-                                                        </header>
-
-                                                        <div class="content">
-                                                            <div class="field field-name-field-image-events field-type-image field-label-hidden">
-                                                                <div class="field-items">
-                                                                    <div class="field-item even"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/styles/228x208/public/bigstock_Education_in_park_happy_child_15440054_0.jpg" width="228" height="208" alt="" /></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-                                                                <div class="field-items">
-                                                                    <div class="field-item even">
-                                                                        <p>Donec in aliquet erat. Integer volutpat, turpis a blandit egestas, nisi sem ultrices velit, et feugiat eros nulla ac justo. In hac habitasse platea dictumst. Etiam varius rhoncus odio ac interdum. Duis in laoreet est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc non purus non augue vehicula semper. Phasellus nec leo eu sapien imperdiet gravida in non sem.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- /.content -->
-
-                                                        <footer>
-                                                            <ul class="links inline">
-                                                                <li class="node-readmore first last"><a href="#" rel="tag" title="Donec in aliquet erat">Read more<span class="element-invisible"> about Donec in aliquet erat</span></a></li>
-                                                            </ul>
-                                                        </footer>
-
-                                                    </article>
-                                                    <!-- /.node -->
-                                                </div>
-                                                <div class="views-row views-row-3 views-row-odd views-row-last">
-                                                    <article id="node-84" class="node node-news-events node-teaser node-odd published with-comments node-teaser clearfix">
-
-                                                        <header>
-
-                                                            <h2><a href="#">Donec sagittis euismod purus.</a></h2>
-
-                                                            <p class="submitted">
-                                                                Submitted by <span class="username">admin</span> on
-                                                                <time pubdate datetime="2013-02-19T17:14:14">
-                                                                    Tue, 02/19/2013 - 17:14 </time>
-                                                            </p>
-                                                        </header>
-
-                                                        <div class="content">
-                                                            <div class="field field-name-field-image-events field-type-image field-label-hidden">
-                                                                <div class="field-items">
-                                                                    <div class="field-item even"><img src="http://livedemo00.template-help.com/drupal_43465/sites/default/files/styles/228x208/public/bigstock_Children_In_Pool_1790468_0.jpg" width="228" height="208" alt="" /></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-                                                                <div class="field-items">
-                                                                    <div class="field-item even">
-                                                                        <p>Curabitur a lorem sit amet lectus tristique pharetra a ac arcu. Cras nunc turpis, iaculis eu porttitor et, pharetra eu eros. Integer consequat sollicitudin sollicitudin. Morbi sollicitudin ipsum eu urna auctor a volutpat erat mattis. Cras pharetra consequat lorem sed sagittis. In id lectus mi.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- /.content -->
-
-                                                        <footer>
-                                                            <ul class="links inline">
-                                                                <li class="node-readmore first last"><a href="#" rel="tag" title="Donec sagittis euismod purus.">Read more<span class="element-invisible"> about Donec sagittis euismod purus.</span></a></li>
-                                                            </ul>
-                                                        </footer>
-
-                                                    </article>
-                                                    <!-- /.node -->
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
-                                    <!-- /.content -->
-
                                 </div>
-                                <!-- /.block -->
                             </div>
-
                         </div>
-                        <!-- /.section -->
-                    </div>
-                    <!-- /#content -->
+                        <div class="col-lg-4">
+                             <section id="block-comment-recent" class="block block-comment block-odd">
 
-                </div>
-                <!-- /#main -->
+                                <div class="penci_latest_news_widget">
+                                    <h4 class="widget-title penci-border-arrow">
+                                        <span class="inner-arrow">Recent Posts</span>
+                                    </h4>
+                                    <div class="side-newsfeed">
+                                        <div class="penci-feed">
+                                            <div class="side-item">
+                                                <div class="side-image">
+                                                    <a href="note.html" class="small-fix-size">
+                                                        <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="side-item-text">
+                                                    <h4 class="side-title-post">
+                                                        <a href="note.html">Memories from Last Summer</a>
+                                                    </h4>
+                                                    <span class="side-item-meta">
+                                                        <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="side-item">
+                                                <div class="side-image">
+                                                    <a href="note.html" class="small-fix-size">
+                                                        <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="side-item-text">
+                                                    <h4 class="side-title-post">
+                                                        <a href="note.html">Memories from Last Summer</a>
+                                                    </h4>
+                                                    <span class="side-item-meta">
+                                                        <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="side-item">
+                                                <div class="side-image">
+                                                    <a href="note.html" class="small-fix-size">
+                                                        <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="side-item-text">
+                                                    <h4 class="side-title-post">
+                                                        <a href="note.html">Memories from Last Summer</a>
+                                                    </h4>
+                                                    <span class="side-item-meta">
+                                                        <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="side-item">
+                                                <div class="side-image">
+                                                    <a href="note.html" class="small-fix-size">
+                                                        <img src="sites/all/themes/theme764/images/blog/girl2-263x175.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="side-item-text">
+                                                    <h4 class="side-title-post">
+                                                        <a href="note.html">Memories from Last Summer</a>
+                                                    </h4>
+                                                    <span class="side-item-meta">
+                                                        <time class="entry-date published" datetime="2017-06-07T13:46:15+00:00">June 7, 2017</time>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </section>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <!-- /#main-wrapper -->
 
             <footer id="footer" role="contentinfo">
-                <div class="footer-wrapper clearfix">
+                <div class="footer-wrapper container clearfix">
                     <div class="region region-footer">
                         <div id="block-block-5" class="block block-block block-even">
 
                             <div class="content">
-                                Kinder &copy; 2019 &nbsp;&nbsp;&nbsp; <a href="?q=node/79">Privacy Policy</a> </div>
+                                Kinder &copy; 2019 &nbsp;&nbsp;&nbsp; <a href="#">Privacy Policy</a> 
+                            </div>
                             <!-- /.content -->
 
                         </div>
@@ -615,7 +565,9 @@
 
     <!--LIVEDEMO_00 -->
     
-
+    <script src="sites/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="sites/bootstrap/js/popper.min.js"></script>
+    <script src="sites/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 <!-- End Google Tag Manager -->
