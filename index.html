@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Brave Kids</title>
         <link rel="stylesheet" href="sites/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="sites/all/themes/theme764/css/all.min.css">
         <link rel="stylesheet" href="sites/all/themes/theme764/css/system.base.css">
 		<link rel="stylesheet" href="sites/all/themes/theme764/css/system.menus.css">
 		<link rel="stylesheet" href="sites/all/themes/theme764/css/system.messages.css">
@@ -173,50 +174,66 @@
 		<div id="page-wrapper">
 			<div id="page">
                 
-				<header id="header" role="banner" class="clearfix container">
+				<header id="header" role="banner" class="clearfix px-xl-0 container">
 					<div class="row clearfix">
-                        <div class="col-6">
+                        <div class="col-xl-6 col-lg-6 col-md-12">
                             <a href="index.html" title="Home" rel="home" id="logo">
                                 <img class="logo" src="sites/all/themes/theme764/images/logo.png" alt="Home" />
                             </a>
                         </div>
-                        <div class="col-6">
-                            <div class="dropdown lang">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Azərbaycan dili
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Azərbaycan dili</a>
-                                    <a class="dropdown-item" href="#">Русский язык</a>
-                                    <a class="dropdown-item" href="#">English</a>
+                        <div class="col-xl-6 col-lg-6 col-md-12">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <div class="lang">
+                                        <a href="#" class="language language-active">AZ</a>
+                                        <a href="#" class="language">RU</a>
+                                        <a href="#" class="language">EN</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <form class="my-2">
+                                        <div class="wrap">
+                                            <div class="search">
+                                                <input type="text" class="searchTerm" placeholder="axtarış">
+                                                <button type="submit" class="searchButton">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
-					<nav class="navbar navbar-expand-xl navbar-dark justify-content-center p-0">
+                    </div>                  
+					<nav class="navbar navbar-expand-xl navbar-dark justify-content-center p-0 margin-nav">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             <span>Menu</span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul id="superfish-1" class="navbar-nav  mr-auto">
+                            <ul id="superfish-1" class="navbar-nav mr-auto" data-breakpoint="800">
                                 <li id="menu-201-1" class="nav-item sf-item-1">
                                     <a class="nav-link" href="index.html">Ana Səhifə</a>
                                 </li>
                                 <li id="menu-1997-1" class="nav-item sf-item-2">
-                                    <a class="nav-link sf-depth-1" href="about.html">Haqqımızda</a>
+                                    <a class="nav-link sf-depth-1" href="about.html">Bağçamız</a>
                                 </li>
-                                <li id="menu-668-1" class="nav-item sf-item-3 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <li id="menu-668-1" class="nav-item sf-item-3">
+                                    <a class="nav-link sf-depth-1" href="services.html">Gündəlik rejim</a>
+                                </li>
+                                <!--
+                                <li id="menu-668-1" class="nav-item sf-item-3">
+                                    <a class="nav-link" href="services.html">
                                         Xidmətlər
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="isgrafik.html">İş Qrafiki</a>
-                                        <a class="dropdown-item" href="services.html">Xidmətlər</a>
+                                    <i class="fas fa-sort-down click-dropdawn"></i>
+                                    <div class="my-dropdown-menu">
+                                        <a href="isgrafik.html">İş Qrafiki</a>
                                     </div>
                                 </li>
+                                -->
                                 <li id="menu-668-1" class="nav-item sf-item-4">
-                                    <a class="nav-link sf-depth-1" href="proqram.html">Proqramlar</a>
+                                    <a class="nav-link sf-depth-1" href="services.html">Tədris</a>
                                 </li>
                                 <li id="menu-1998-1" class="nav-item sf-item-5">
                                     <a class="nav-link sf-depth-1" href="kurslar.html">Kurslar</a>
@@ -236,118 +253,117 @@
 								<div class="content">
 									<div class="view view-slider view-id-slider ">
 										<div id="flexslider_views_slideshow_main_slider-block_1" class="flexslider_views_slideshow_main views_slideshow_main">
-                            <div class="flex-nav-container">
-                                <div class="flexslider">
-                                    <ul id="flexslider_views_slideshow_slider-block_1" class="flexslider-views-slideshow-main-frame slides">
-                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-odd">
+                                            <div class="flex-nav-container">
+                                                <div class="flexslider">
+                                                    <ul id="flexslider_views_slideshow_slider-block_1" class="flexslider-views-slideshow-main-frame slides">
+                                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-odd">
+                                                            <div class="views-field views-field-field-slide-image">
+                                                                <div class="field-content content-img">
+                                                                    <img src="gallery/slide1.png" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-body views-slider-position-two">
+                                                                <div class="field-content">
+                                                                    <p>
+                                                                        <strong class="shadow-two">Xoşbəxt</strong> 
+                                                                        <b class="shadow-two">gələcək üçün</b> 	
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-view-node">
+                                                                <span class="field-content">
+                                                                    <a href="note.html">more</a>
+                                                                </span> 
+                                                            </div>
+                                                        </li>
+                                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
 
-                                            <div class="views-field views-field-field-slide-image">
-                                                <div class="field-content content-img">
-                                                    <img src="gallery/slide1.png" alt="" />
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-body views-slider-position-two">
-                                                <div class="field-content">
-                                                    <p>
-                                                        <strong>Xoşbəxt</strong> 
-                                                        <b>gələcək üçün</b> 	
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-view-node">
-                                                <span class="field-content">
-                                                    <a href="note.html">more</a>
-                                                </span> 
-                                            </div>
-                                        </li>
-                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
+                                                            <div class="views-field views-field-field-slide-image">
+                                                                <div class="field-content content-img">
+                                                                    <img src="gallery/slide2.png" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-body views-slider-position-two">
+                                                                <div class="field-content">
+                                                                    <p>
+                                                                        <strong class="shadow-two">Xoşbəxt</strong> 
+                                                                        <b class="shadow-two">gələcək üçün</b> 	
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-view-node">
+                                                                <span class="field-content">
+                                                                    <a href="note.html">more</a>
+                                                                </span> 
+                                                            </div>
+                                                        </li>
+                                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
 
-                                            <div class="views-field views-field-field-slide-image">
-                                                <div class="field-content content-img">
-                                                    <img src="gallery/slide2.png" alt="" />
-                                                </div>
-                                            </div>
-                                             <div class="views-field views-field-body views-slider-position-two">
-                                                <div class="field-content">
-                                                    <p>
-                                                        <strong>Xoşbəxt</strong> 
-                                                        <b>gələcək üçün</b> 	
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-view-node">
-                                                <span class="field-content">
-                                                    <a href="note.html">more</a>
-                                                </span> 
-                                            </div>
-                                        </li>
-                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
+                                                            <div class="views-field views-field-field-slide-image">
+                                                                <div class="field-content">
+                                                                    <img src="gallery/slide3.png" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-body views-slider-position-two">
+                                                                <div class="field-content">
+                                                                    <p>
+                                                                        <strong class="shadow-two">Xoşbəxt</strong> 
+                                                                        <b class="shadow-two">gələcək üçün</b> 	
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-view-node">
+                                                                <span class="field-content">
+                                                                    <a href="note.html">more</a>
+                                                                </span> 
+                                                            </div>
+                                                        </li>
+                                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
 
-                                            <div class="views-field views-field-field-slide-image">
-                                                <div class="field-content">
-                                                    <img src="gallery/slide3.png" alt="" />
-                                                </div>
-                                            </div>
-                                             <div class="views-field views-field-body views-slider-position-two">
-                                                <div class="field-content">
-                                                    <p>
-                                                        <strong>Xoşbəxt</strong> 
-                                                        <b>gələcək üçün</b> 	
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-view-node">
-                                                <span class="field-content">
-                                                    <a href="note.html">more</a>
-                                                </span> 
-                                            </div>
-                                        </li>
-                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-even">
+                                                            <div class="views-field views-field-field-slide-image">
+                                                                <div class="field-content">
+                                                                    <img src="gallery/slide4.png" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-body views-slider-position-two">
+                                                                <div class="field-content">
+                                                                    <p>
+                                                                        <strong class="shadow-two">Xoşbəxt</strong> 
+                                                                        <b class="shadow-two">gələcək üçün</b> 	
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-view-node">
+                                                                <span class="field-content">
+                                                                    <a href="note.html">more</a>
+                                                                </span> 
+                                                            </div>
+                                                        </li>
+                                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
 
-                                            <div class="views-field views-field-field-slide-image">
-                                                <div class="field-content">
-                                                    <img src="gallery/slide4.png" alt="" />
+                                                            <div class="views-field views-field-field-slide-image">
+                                                                <div class="field-content">
+                                                                    <img src="gallery/slide5.png" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-body views-slider-position-two">
+                                                                <div class="field-content">
+                                                                    <p>
+                                                                        <strong class="shadow-two">Xoşbəxt</strong> 
+                                                                        <b class="shadow-two">gələcək üçün</b> 	
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views-field views-field-view-node">
+                                                                <span class="field-content">
+                                                                    <a href="note.html">more</a>
+                                                                </span> 
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                             <div class="views-field views-field-body views-slider-position-two">
-                                                <div class="field-content">
-                                                    <p>
-                                                        <strong>Xoşbəxt</strong> 
-                                                        <b>gələcək üçün</b> 	
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-view-node">
-                                                <span class="field-content">
-                                                    <a href="note.html">more</a>
-                                                </span> 
-                                            </div>
-                                        </li>
-                                        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views_slideshow_cycle_hidden views-row-odd">
-
-                                            <div class="views-field views-field-field-slide-image">
-                                                <div class="field-content">
-                                                    <img src="gallery/slide5.png" alt="" />
-                                                </div>
-                                            </div>
-                                             <div class="views-field views-field-body views-slider-position-two">
-                                                <div class="field-content">
-                                                    <p>
-                                                        <strong>Xoşbəxt</strong> 
-                                                        <b>gələcək üçün</b> 	
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-view-node">
-                                                <span class="field-content">
-                                                    <a href="note.html">more</a>
-                                                </span> 
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                                        </div>
 									</div>
 								</div>
 								<!-- /.content -->
@@ -361,7 +377,7 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 px-xl-0">
                             <div id="block-block-6" class="block block-block block-odd">
 								<div class="content">
 									<p>Ünvan: Baki Ağ Şəhər, Mərkəzi Bulvar Küçəsi. <span>+994 409 00 44</span></p>
@@ -372,7 +388,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 pl-xl-0">
                             <div class="views-row views-row-1 views-row-odd views-row-first p-3">
                                 <div class="views-field views-field-title">
                                     <span class="field-content">Niya Brave Kids ?</span>
@@ -410,7 +426,7 @@
                         <div class="col-lg-4">
                             <div class="views-row views-row-2 views-row-even p-3">
                                 <div class="views-field views-field-title"> 
-                                    <span class="field-content">Xidmətlərimiz</span> 
+                                    <span class="field-content">Qidalanma</span> 
                                 </div>
                                 <div class="views-field views-field-field-image">
                                     <div class="field-content">
@@ -420,22 +436,23 @@
                                 <div class="block-services views-field views-field-body">
                                     <div class="field-content">
                                         <p>
-                                            Brave Kids Uşaq Bağçasında tədris proqramı Azərbaycan Respublikasının Təhsil Nazirliyinin Milli
-                                            Kurikulum Proqramına tam uyğun olaraq təsdiqlənmişdir.Bağçada xidmətlər iki paket şəklində təklif olunur:
+                                            Brave Kids Uşaq Bağçasının yeməkxanası ən müasir mətbəx avadanlıqları ilə təchiz olunub.
+                                            Bağçada qidalanma gündə 5 dəfə olmaqla müxtəlif yemək menyusu üzərində aparılır. Yeməklər
+                                            peşəkar aşpazlar tərəfindən hazırlanır. 
                                         </p>
                                     </div>
                                 </div>
                                 <div class="views-field views-field-view-node">
                                     <span class="field-content">
-                                        <a href="services.html">view</a>
+                                        <a href="qidalanma.html">view</a>
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 pr-xl-0">
                             <div class="views-row views-row-3 views-row-even p-3">
                                 <div class="views-field views-field-title"> 
-                                    <span class="field-content">Proqramlarimiz</span> 
+                                    <span class="field-content">İş Qrafiki</span> 
                                 </div>
                                 <div class="views-field views-field-field-image">
                                     <div class="field-content">
@@ -444,26 +461,12 @@
                                 </div>
                                 <div class="block-services views-field views-field-body">
                                     <div class="field-content">
-                                        <p>Bağçaya qəbul aşağıdakı yaş qrupları üzrə aparılır: </p>
-                                        <ul>
-                                            <li>
-                                                <p>Kiçik qruplar  (1,5-3 yaş)</p>
-                                            </li>
-                                            <li>
-                                                <p>Orta qruplar (3-4 yaş)</p>
-                                            </li>
-                                            <li>
-                                                <p>Böyük qruplar (4-5 yaş)</p>
-                                            </li>
-                                            <li>
-                                                <p>Məktəbəqədər hazırlıq (5-6 yaş)</p>
-                                            </li>
-                                        </ul>
+                                        <p> “Brave Kids” həftənin 6 günü səhər saat 08:00-dan axşam saat 18:00-a qədər fəaliyyət göstərir. Bağçada xidmətlər iki paket şəklində təklif olunur</p>
                                     </div>
                                 </div>
                                 <div class="views-field views-field-view-node">
                                     <span class="field-content">
-                                        <a href="proqram.html">view</a>
+                                        <a href="isgrafik.html">view</a>
                                     </span>
                                 </div>
                             </div>
@@ -475,25 +478,22 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 servisec">
+                        <div class="col-lg-4 servisec pl-xl-0">
                             <div class="views-row views-row-odd views-row-first">
                                 <div class="views-field views-field-title">
                                     <span class="field-content">Xəbərlər</span> 
                                 </div>
                                 <div class="views-field views-field-body">
                                     <div class="field-content">
-                                        <strong>Mon-Fri 7.30am - 5.30pm</strong>
-                                        <span>Outside School Care for 5-7 year olds</span>
-                                        <p>
-                                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                                        </p>
-                                    </div>
-                                    <div class="views-field views-field-view-node">
-                                        <span class="field-content">
-                                            <a href="blog.html">Ətraflı</a>
-                                        </span> 
+                                        <ul class="footer-title-news">
+                                            <li><p><a class="footer-link" href="#">Memories from Last Summer</a></p></li>
+                                            <li><p><a class="footer-link" href="#">Memories from Last Summer</a></p></li>
+                                            <li><p><a class="footer-link" href="#">Memories from Last Summer</a></p></li>
+                                            <li><p><a class="footer-link" href="#">Memories from Last Summer</a></p></li>
+                                            <li><p><a class="footer-link" href="#">Memories from Last Summer</a></p></li>
+                                            <li><p><a class="footer-link" href="#">Memories from Last Summer</a></p></li>
+                                            <li><p><a class="footer-link" href="#">Memories from Last Summer</a></p></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -516,7 +516,7 @@
                                 </div>                 
                             </div>
                         </div>
-                        <div class="col-lg-4 servisec">
+                        <div class="col-lg-4 servisec pr-xl-0">
                             <div class="views-row views-row-even views-row-last">
                                 <div class="views-field views-field-title"> 
                                     <span class="field-content">Bizi sosial şəbəkələrdə izləyin</span> 
@@ -543,7 +543,9 @@
             <footer id="footer" role="contentinfo">
                 <div class="footer-wrapper container clearfix">
                     <div class="region region-footer">
-                        <div id="block-block-5" class="block block-block block-even"></div>
+                        <div id="block-block-5" class="block block-block block-even">
+                            <p>© 2019 <span><a href="#">Brave Kids</a><span> Bütün hüquqlar qorunur</p>
+                        </div>
                         <!-- /.block -->
                     </div>
                 </div>
@@ -557,7 +559,7 @@
     <!-- /#page-wrapper -->
 
     <!--LIVEDEMO_00 -->
-    <script src="sites/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="sites/all/themes/theme764/js/jquery-3.4.1.js"></script>
     <script src="sites/bootstrap/js/popper.min.js"></script>
     <script src="sites/bootstrap/js/bootstrap.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.3"></script>

@@ -11,6 +11,7 @@
     <title>Brave Kids</title>
 
     <link rel="stylesheet" href="sites/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sites/all/themes/theme764/css/all.min.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.base.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.menus.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.messages.css">
@@ -198,65 +199,81 @@
 
             <header id="header" role="banner" class="clearfix container">
                 <div class="row clearfix">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
                         <a href="index.html" title="Home" rel="home" id="logo">
                             <img class="logo" src="sites/all/themes/theme764/images/logo.png" alt="Home" />
                         </a>
                     </div>
-                    <div class="col-6">
-                        <div class="dropdown lang">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Azərbaycan dili
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Azərbaycan dili</a>
-                                <a class="dropdown-item" href="#">Русский язык</a>
-                                <a class="dropdown-item" href="#">English</a>
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="lang">
+                                    <a href="#" class="language language-active">AZ</a>
+                                    <a href="#" class="language">RU</a>
+                                    <a href="#" class="language">EN</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <form class="my-2">
+                                    <div class="wrap">
+                                        <div class="search">
+                                            <input type="text" class="searchTerm" placeholder="axtarış">
+                                            <button type="submit" class="searchButton">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
 
-                <nav class="navbar navbar-expand-xl navbar-dark justify-content-center p-0">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            <span>Menu</span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul id="superfish-1" class="navbar-nav  mr-auto">
-                                <li id="menu-201-1" class="nav-item sf-item-1">
-                                    <a class="nav-link" href="index.html">Ana Səhifə</a>
-                                </li>
-                                <li id="menu-1997-1" class="nav-item sf-item-2">
-                                    <a class="nav-link sf-depth-1" href="about.html">Haqqımızda</a>
-                                </li>
-                                <li id="menu-668-1" class="nav-item sf-item-3 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Xidmətlər
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="isgrafik.html">İş Qrafiki</a>
-                                        <a class="dropdown-item" href="services.html">Xidmətlər</a>
-                                    </div>
-                                </li>
-                                <li id="menu-668-1" class="nav-item sf-item-4">
-                                    <a class="nav-link sf-depth-1" href="proqram.html">Proqramlar</a>
-                                </li>
-                                <li id="menu-1998-1" class="nav-item sf-item-5">
-                                    <a class="nav-link sf-depth-1" href="kurslar.html">Kurslar</a>
-                                </li>
-                                <li id="menu-1999-1" class="nav-item sf-item-6">
-                                    <a class="nav-link sf-depth-1" href="portfolio.html">Qalereya</a>
-                                </li>
-                                <li id="menu-442-1" class="nav-item sf-item-7">
-                                    <a class="nav-link sf-depth-1" href="contacts.html">Əlaqə</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                <nav class="navbar navbar navbar-expand-xl navbar-dark justify-content-center p-0 margin-nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span>Menu</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="superfish-1" class="navbar-nav mr-auto" data-breakpoint="800">
+                            <li id="menu-201-1" class="nav-item sf-item-1">
+                                <a class="nav-link" href="index.html">Ana Səhifə</a>
+                            </li>
+                            <li id="menu-1997-1" class="nav-item sf-item-2">
+                                <a class="nav-link sf-depth-1" href="about.html">Bağçamız</a>
+                            </li>
+                                <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link sf-depth-1" href="services.html">Gündəlik rejim</a>
+                            </li>
+                            <!--
+                            <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link" href="services.html">
+                                    Xidmətlər
+                                </a>
+                                <i class="fas fa-sort-down click-dropdawn"></i>
+                                <div class="my-dropdown-menu">
+                                    <a href="isgrafik.html">İş Qrafiki</a>
+                                </div>
+                            </li>
+                            -->
+                            <li id="menu-668-1" class="nav-item sf-item-4">
+                                <a class="nav-link sf-depth-1" href="services.html">Tədris</a>
+                            </li>
+                            <li id="menu-1998-1" class="nav-item sf-item-5">
+                                <a class="nav-link sf-depth-1" href="kurslar.html">Kurslar</a>
+                            </li>
+                            <li id="menu-1999-1" class="nav-item sf-item-6">
+                                <a class="nav-link sf-depth-1" href="portfolio.html">Qalereya</a>
+                            </li>
+                            <li id="menu-442-1" class="nav-item sf-item-7">
+                                <a class="nav-link sf-depth-1" href="contacts.html">Əlaqə</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 px-lg-0">
                         <div id="flexslider_views_slideshow_main_slider-block_1" class="flexslider_views_slideshow_main views_slideshow_main">
                             <div class="flex-nav-container">
                                 <div class="flexslider">
@@ -315,7 +332,7 @@
             <div class="container-fluid my-5">
                 <div class="container">
                     <div class="row">
-                      <div class="col-lg-8">
+                      <div class="col-lg-8 pl-xl-0">
                         <div class="section">
                             <div class="tabs"></div>
                             <div class="region region-content">
@@ -359,7 +376,7 @@
                             </div>
                         </div>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 pr-xl-0">
                         <section id="block-comment-recent" class="block block-comment block-odd">
 
                               <div class="penci_latest_news_widget">
@@ -442,7 +459,14 @@
             <footer id="footer" role="contentinfo">
                 <div class="footer-wrapper container clearfix">
                     <div class="region region-footer">
-                        <div id="block-block-5" class="block block-block block-even"></div>
+                        <div id="block-block-5" class="block block-block block-even">
+                            <div class="region region-footer">
+                                <div id="block-block-5" class="block block-block block-even">
+                                    <p>© 2019 <span><a href="#">Brave Kids</a><span> Bütün hüquqlar qorunur</p>
+                                </div>
+                                <!-- /.block -->
+                            </div>
+                        </div>
                         <!-- /.block -->
                     </div>
                 </div>

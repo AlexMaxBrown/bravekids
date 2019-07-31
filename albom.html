@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="sites/all/themes/theme764/css/boilerplate.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/style.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/maintenance-page.css">
+    <link rel="stylesheet" href="sites/all/themes/theme764/css/lightgallery.min.css">
 
     <script type="text/javascript" src="sites/all/themes/theme764/js/jquery.js"></script>
     <script type="text/javascript" src="sites/all/themes/theme764/js/jquery.once.js"></script>
@@ -58,6 +59,7 @@
     <script type="text/javascript" src="sites/all/themes/theme764/js/ajax_view.js"></script>
     <script type="text/javascript" src="sites/all/themes/theme764/js/flexslider.load.js"></script>
     <script type="text/javascript" src="sites/all/themes/theme764/js/flexslider_views_slideshow.js"></script>
+    <script type="text/javascript" src="sites/all/themes/theme764/js/lightgallery.min.js"></script>
     
     <script type="text/javascript">
         <!--//--><![CDATA[//><!--
@@ -226,51 +228,67 @@
 
         <div id="page">
 
-            <header id="header" role="banner" class="clearfix container">
+            <header id="header" role="banner" class="clearfix px-lg-0 container">
                 <div class="row clearfix">
-                    <div class="col-6">
-                        <a href="index.html" title="Home" rel="home" id="logo">
-                            <img class="logo" src="sites/all/themes/theme764/images/logo.png" alt="Home" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="dropdown lang">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Azərbaycan dili
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Azərbaycan dili</a>
-                                <a class="dropdown-item" href="#">Русский язык</a>
-                                <a class="dropdown-item" href="#">English</a>
+                        <div class="col-xl-6 col-lg-6 col-md-12">
+                            <a href="index.html" title="Home" rel="home" id="logo">
+                                <img class="logo" src="sites/all/themes/theme764/images/logo.png" alt="Home" />
+                            </a>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <div class="lang">
+                                        <a href="#" class="language language-active">AZ</a>
+                                        <a href="#" class="language">RU</a>
+                                        <a href="#" class="language">EN</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <form class="my-2">
+                                        <div class="wrap">
+                                            <div class="search">
+                                                <input type="text" class="searchTerm" placeholder="axtarış">
+                                                <button type="submit" class="searchButton">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> 
 
-                <nav class="navbar navbar-expand-xl navbar-dark justify-content-center p-0">
+                <nav class="navbar navbar-expand-xl navbar-dark justify-content-center p-0 margin-nav">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         <span>Menu</span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul id="superfish-1" class="navbar-nav  mr-auto">
+                        <ul id="superfish-1" class="navbar-nav mr-auto" data-breakpoint="800">
                             <li id="menu-201-1" class="nav-item sf-item-1">
                                 <a class="nav-link" href="index.html">Ana Səhifə</a>
                             </li>
                             <li id="menu-1997-1" class="nav-item sf-item-2">
-                                <a class="nav-link sf-depth-1" href="about.html">Haqqımızda</a>
+                                <a class="nav-link sf-depth-1" href="about.html">Bağçamız</a>
                             </li>
-                            <li id="menu-668-1" class="nav-item sf-item-3 dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link sf-depth-1" href="services.html">Gündəlik rejim</a>
+                            </li>
+                            <!--
+                            <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link" href="services.html">
                                     Xidmətlər
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="isgrafik.html">İş Qrafiki</a>
-                                    <a class="dropdown-item" href="services.html">Xidmətlər</a>
+                                <i class="fas fa-sort-down click-dropdawn"></i>
+                                <div class="my-dropdown-menu">
+                                    <a href="isgrafik.html">İş Qrafiki</a>
                                 </div>
                             </li>
+                            -->
                             <li id="menu-668-1" class="nav-item sf-item-4">
-                                <a class="nav-link sf-depth-1" href="proqram.html">Proqramlar</a>
+                                <a class="nav-link sf-depth-1" href="services.html">Tədris</a>
                             </li>
                             <li id="menu-1998-1" class="nav-item sf-item-5">
                                 <a class="nav-link sf-depth-1" href="kurslar.html">Kurslar</a>
@@ -346,7 +364,7 @@
                     <div id="content" class="column" role="main">
                         <div class="section">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 px-lg-0">
                                     <h1 class="title" id="page-title">Albom title</h1>
                                     <div class="tabs"></div>
                                 </div>
@@ -356,64 +374,46 @@
                                     <div class="content">
                                         <div class="view view-portfolio view-id-portfolio view-display-id-page view-dom-id-bde481d201b51ca80c3d0e2851fa8a70">
                                             <div class="view-content">
-                                                <div class="row my-3">
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                <div class="row my-3 lightgallery">
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
-                                                </div>
-                                                <div class="row my-3">
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="field-content">
-                                                            <a href="gallery/0.jpg" title="Nulla ultricies" class="colorbox" rel="gallery-node-53">
-                                                                <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
-                                                            </a>
-                                                        </div>
+                                                    <div class="col-lg-3 p-2" data-src="gallery/0.jpg">
+                                                        <a href="gallery/0.jpg">
+                                                            <img src="gallery/0.jpg" width="215" height="155" alt="" title="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -454,7 +454,14 @@
             </div>
 
             <footer id="footer" role="contentinfo">
-                <div class="footer-wrapper container clearfix"></div>
+                <div class="footer-wrapper container clearfix">
+                    <div class="region region-footer">
+                        <div id="block-block-5" class="block block-block block-even">
+                            <p>© 2019 <span><a href="#">Brave Kids</a><span> Bütün hüquqlar qorunur</p>
+                        </div>
+                        <!-- /.block -->
+                    </div>
+                </div>
                 <!-- /#footer-wrapper -->
             </footer>
             <!-- /#footer -->
@@ -471,6 +478,10 @@
     <script src="sites/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
     <script src="sites/all/themes/theme764/js/all.min.js"></script>
+    <script src="sites/all/themes/theme764/js/lightgallery-all.min.js"></script>
+    <script type="text/javascript">
+        $(".lightgallery").lightGallery();
+    </script>
 </body>
 
 

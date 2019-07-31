@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-<!--[if IE 8 ]><html lang="en" dir="ltr"  class="no-js ie8"><![endif]-->
-<!--[if IE 9 ]><html lang="en" dir="ltr"  class="no-js ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="en" dir="ltr" class="no-js">
 <!--<![endif]-->
 
@@ -13,6 +10,7 @@
 
     <title>Brave Kids</title>
     <link rel="stylesheet" href="sites/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sites/all/themes/theme764/css/all.min.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.base.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.menus.css">
     <link rel="stylesheet" href="sites/all/themes/theme764/css/system.messages.css">
@@ -279,49 +277,65 @@
 
             <header id="header" role="banner" class="clearfix container">
                 <div class="row clearfix">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
                         <a href="index.html" title="Home" rel="home" id="logo">
                             <img class="logo" src="sites/all/themes/theme764/images/logo.png" alt="Home" />
                         </a>
                     </div>
-                    <div class="col-6">
-                        <div class="dropdown lang">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Azərbaycan dili
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Azərbaycan dili</a>
-                                <a class="dropdown-item" href="#">Русский язык</a>
-                                <a class="dropdown-item" href="#">English</a>
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="lang">
+                                    <a href="#" class="language language-active">AZ</a>
+                                    <a href="#" class="language">RU</a>
+                                    <a href="#" class="language">EN</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <form class="my-2">
+                                    <div class="wrap">
+                                        <div class="search">
+                                            <input type="text" class="searchTerm" placeholder="axtarış">
+                                            <button type="submit" class="searchButton">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
 
-                <nav class="navbar navbar-expand-xl navbar-dark justify-content-center p-0">
+                <nav class="navbar navbar-expand-xl navbar-dark justify-content-center p-0 margin-nav">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         <span>Menu</span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul id="superfish-1" class="navbar-nav  mr-auto">
+                        <ul id="superfish-1" class="navbar-nav mr-auto" data-breakpoint="800">
                             <li id="menu-201-1" class="nav-item sf-item-1">
                                 <a class="nav-link" href="index.html">Ana Səhifə</a>
                             </li>
                             <li id="menu-1997-1" class="nav-item sf-item-2">
-                                <a class="nav-link sf-depth-1" href="about.html">Haqqımızda</a>
+                                <a class="nav-link sf-depth-1" href="about.html">Bağçamız</a>
                             </li>
-                            <li id="menu-668-1" class="nav-item sf-item-3 dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link sf-depth-1" href="services.html">Gündəlik rejim</a>
+                            </li>
+                            <!--
+                            <li id="menu-668-1" class="nav-item sf-item-3">
+                                <a class="nav-link" href="services.html">
                                     Xidmətlər
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="isgrafik.html">İş Qrafiki</a>
-                                    <a class="dropdown-item" href="services.html">Xidmətlər</a>
+                                <i class="fas fa-sort-down click-dropdawn"></i>
+                                <div class="my-dropdown-menu">
+                                    <a href="isgrafik.html">İş Qrafiki</a>
                                 </div>
                             </li>
+                            -->
                             <li id="menu-668-1" class="nav-item sf-item-4">
-                                <a class="nav-link sf-depth-1" href="proqram.html">Proqramlar</a>
+                                <a class="nav-link sf-depth-1" href="services.html">Tədris</a>
                             </li>
                             <li id="menu-1998-1" class="nav-item sf-item-5">
                                 <a class="nav-link sf-depth-1" href="kurslar.html">Kurslar</a>
@@ -337,7 +351,7 @@
                 </nav>
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 px-xl-0">
                         <div id="flexslider_views_slideshow_main_slider-block_1" class="flexslider_views_slideshow_main views_slideshow_main">
                             <div class="flex-nav-container">
                                 <div class="flexslider">
@@ -435,8 +449,15 @@
                                     <p>Telephone:+1 800 603 6035
                                         <br /> FAX:+1 800 889 9898
                                         <br /> E-mail: <a href="#">
-                                                <span class="__cf_email__" data-cfemail="ddb0bcb4b19db9b8b0b2b1b4b3b6f3b2afba">[email&#160;protected]</span></a></p>
+                                        <span class="__cf_email__" data-cfemail="ddb0bcb4b19db9b8b0b2b1b4b3b6f3b2afba">[email&#160;protected]</span></a></p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1519.5343335976784!2d49.884281!3d40.3851707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d18b994b50b%3A0xdc2804fe5838c84!2sBrave+kids!5e0!3m2!1sru!2s!4v1564577494424!5m2!1sru!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -446,7 +467,9 @@
             <footer id="footer" role="contentinfo">
                 <div class="footer-wrapper container clearfix">
                     <div class="region region-footer">
-                        <div id="block-block-5" class="block block-block block-even"></div>
+                        <div id="block-block-5" class="block block-block block-even">
+                            <p>© 2019 <span><a href="#">Brave Kids</a><span> Bütün hüquqlar qorunur</p>
+                        </div>
                         <!-- /.block -->
                     </div>
                 </div>
