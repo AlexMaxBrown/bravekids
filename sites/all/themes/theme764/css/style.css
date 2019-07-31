@@ -1831,8 +1831,17 @@ tr.even {
 .footer-title-news li {
     border-bottom: 1px solid #2f568a;
     text-indent: 8px;
-} 
+}
 
+.navbar {
+    width: 100% !important;
+}
+
+/*
+.navbar {
+    max-width: 1050px !important;
+}
+*/
 .footer-title-news li::before {
     content: "\2022";
     color: #fff;
