@@ -888,7 +888,6 @@ article.comment span.new {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    padding:  0 0 0 20px;
 }
 
 h2,
@@ -1338,7 +1337,7 @@ a.follow-link {
 
 .search .searchTerm::placeholder {
     color: #fff;
-    opacity: 0.8; /* Firefox */
+    opacity: 0.4; /* Firefox */
 }
 
 a.follow-link:hover {
@@ -2284,9 +2283,10 @@ tr.even {
     .views-field-title {
         font-size: 29px
     }
+    /*
     .collapse {
-        padding: 0 15px
-    }
+        padding: 0 15px;
+    }*/
     .my-dropdown-menu {
         position: relative;
         margin: 25px 0 0 0;
