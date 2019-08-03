@@ -52,17 +52,19 @@ a:hover {
 }
 
 .views-slider-position-two-eng {
-    top: top: 240px!important;;
+    top: 253px!important;
+    text-shadow: 0px 0px 7px #ff7409;
 }
 
 .view-slider .views-field-body strong.shadow-two-eng {
-    font-size: 70px !important;
-    line-height: 97px;
+    font-size: 75px !important;
+    line-height: 94px;
 }
 
 .view-slider .views-field-body strong.shadow-two-ru {
     font-size: 68px !important;
     line-height: 75px;
+    text-shadow: 0px 0px 7px #ff7409;
 }
 
 
@@ -1640,7 +1642,7 @@ tr.even {
 }
 
 .views-slider-position-two-eng {
-    top: 248px!important;
+    top: 253px!important;
 }
 
 .view-slider .views-field-view-node a {
@@ -2237,6 +2239,10 @@ tr.even {
 
 @media only screen and (max-width: 1200px) {
 
+    .views-slider-position-two-eng {
+        top: 19% !important;
+    }
+
     .transition {
         -webkit-transition: all 0.5s ease-in;
         -moz-transition: all 0.5s ease-in;
@@ -2338,6 +2344,11 @@ tr.even {
     .views-slider-position-two {
         top: 19%!important
     }
+    
+    .views-slider-position-two-ru {
+        top: 19%!important
+    }
+
     .view-slider .views-field-body {
         background: inherit;
         top: 19%
@@ -2414,11 +2425,23 @@ tr.even {
         text-align: center
 
     }
+    .view-slider .views-field-body strong.shadow-two-eng {
+        font-size: 50px !important;
+        line-height: 63px;
+    }
 
     .region-footer p:last-child {
         float: none;
         margin: auto;
         text-align: center;
+    }
+    .view-slider .views-field-body strong.shadow-two-ru {
+        font-size: 48px !important;
+        line-height: 56px;
+    }
+    .views-slider-position-two-eng {
+        display: block;
+        top: 19% !important;
     }
 }
 
@@ -2504,6 +2527,14 @@ tr.even {
         letter-spacing: normal;
         line-height: normal
     }
+    .view-slider .views-field-body strong.shadow-two-ru {
+        font-size: 35px !important;
+        line-height: 44px;
+    }
+    .view-slider .views-field-body strong.shadow-two-eng {
+        font-size: 30px !important;
+        line-height: 48px;
+    }
 }
 
 @media only screen and (max-width: 736px) {
@@ -2557,6 +2588,14 @@ tr.even {
     .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
         width: 84%!important;
         min-width: 190px;
+    }
+    .view-slider .views-field-body strong.shadow-two-ru {
+        font-size: 28px !important;
+        line-height: 31px;
+    }
+    .view-slider .views-field-body strong.shadow-two-eng {
+        font-size: 28px !important;
+        line-height: 31px;
     }
 }
 
