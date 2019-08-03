@@ -29,7 +29,7 @@ $(document).ready(function(){
 	});
 
 	if( x == 0) {
-		$( "#superfish-1 .sf-item-3" ).hover(
+		$( "#superfish-1 .sf-item-6" ).hover(
 			function() {
 				$( '.my-dropdown-menu' ).fadeIn();
 			}, function() {

@@ -200,6 +200,35 @@ a:hover {
     cursor: pointer;
 }
 
+#superfish-1 .sf-item-6 {
+    background: url(../images/menu6.png) 0 0 no-repeat;
+    width: 149px;
+    min-height: 75px;
+}
+
+#superfish-1 .sf-item-6 a {
+    width: 70%;
+    display: inline-block;
+    margin:  0 0 0 10px;
+}
+
+
+#superfish-1 .sf-item-6 svg {
+    color: #fff;
+    margin-bottom: 26px;
+    font-size: 1.5rem;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#superfish-1 .sf-item-6 i {
+    color: #fff;
+    margin-top: 26px;
+    font-size: 1.5rem;
+    opacity: 1;
+    cursor: pointer;
+}
+
 .language {
     display: inline-block;
     text-decoration: none;
@@ -223,11 +252,6 @@ a:hover {
 
 #superfish-1 .sf-item-5 a {
     background: url(../images/menu5.png) 0 0 no-repeat;
-    min-height: 75px;
-}
-
-#superfish-1 .sf-item-6 a {
-    background: url(../images/menu6.png) 0 0 no-repeat;
     min-height: 75px;
 }
 
@@ -541,31 +565,38 @@ a:hover {
 }
 
 .page-item.active .page-link {
-    background: #ffbc09;
-    border-radius: 20%
+    background: #ffbc09 !important;
+    border-radius: 20% !important;
 }
 
 .pagination-lg .page-link {
-    color: #fff;
+    color: #fff !important;
     margin: 0 5px;
-    font-weight: 600
+    font-weight: 600;
+    font-size: 18px !important;
 }
 
 .page-link:hover {
     z-index: 2;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
-    background-color: #87bff3;
-    border-color: #87bff3;
+    background-color: #87bff3 !important;
+    border-color: #87bff3 !important;
     border-radius: 20%
+}
+
+.link-video {
+    cursor: pointer;
 }
 
 .pagination-lg .page-item:last-child .page-link {
-    border-radius: 20%
+    border-radius: 20%;
+    font-size: 20px;
 }
 
 .pagination-lg .page-item:first-child .page-link {
-    border-radius: 20%
+    border-radius: 20%;
+    font-size: 20px;
 }
 
 .side-item {
@@ -888,6 +919,7 @@ article.comment span.new {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    display: block;
 }
 
 h2,
@@ -1830,6 +1862,7 @@ tr.even {
 
 .navbar {
     width: 100% !important;
+    box-shadow: none !important;
 }
 
 /*
@@ -2170,6 +2203,11 @@ tr.even {
     color: #87bff3;
 }
 
+.form-item, .form-actions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 1200px) {
 
     .transition {
@@ -2215,9 +2253,13 @@ tr.even {
         width: 100%;
     }
 
-    #superfish-1 .sf-item-6 a {
+    #superfish-1 .sf-item-6 {
         background: #d97b2d;
         width: 100%;
+    }
+
+    #superfish-1 .sf-item-6 a {
+        width: 70%;
     }
 
     #superfish-1 .sf-item-7 a {
