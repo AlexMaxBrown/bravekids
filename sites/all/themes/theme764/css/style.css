@@ -51,13 +51,20 @@ a:hover {
     font-size: 67px;
 }
 
+.views-slider-position-two-eng {
+    top: top: 240px!important;;
+}
+
 .view-slider .views-field-body strong.shadow-two-eng {
-    font-size: 67px !important;
+    font-size: 70px !important;
+    line-height: 97px;
 }
 
 .view-slider .views-field-body strong.shadow-two-ru {
     font-size: 68px !important;
+    line-height: 75px;
 }
+
 
 #header {
     position: relative;
@@ -1625,7 +1632,15 @@ tr.even {
 }
 
 .views-slider-position-two {
-    top: 214px!important
+    top: 225px!important
+}
+
+.views-slider-position-two-ru {
+    top: 217px!important;
+}
+
+.views-slider-position-two-eng {
+    top: 248px!important;
 }
 
 .view-slider .views-field-view-node a {
@@ -1636,7 +1651,7 @@ tr.even {
     height: 50px;
     position: absolute;
     top: 360px;
-    left: 496px
+    left: 498px
 }
 
 .flexslider {
