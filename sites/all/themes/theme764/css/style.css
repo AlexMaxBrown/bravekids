@@ -56,17 +56,37 @@ a:hover {
     text-shadow: 0px 0px 7px #ff7409;
 }
 
+.view-slider .views-field-body-eng {
+    padding: 0 0 56px 20px !important;
+}
+
+.view-slider .views-field-body-ru {
+    padding: 0 0 56px 21px !important;
+}
+
 .view-slider .views-field-body strong.shadow-two-eng {
-    font-size: 75px !important;
+    font-size: 68px !important;
     line-height: 94px;
 }
 
-.view-slider .views-field-body strong.shadow-two-ru {
-    font-size: 68px !important;
-    line-height: 75px;
-    text-shadow: 0px 0px 7px #ff7409;
+.view-slider .views-field-body strong.shadow-two-eng:first-child {
+    padding: 0px 0 0 40px;
 }
 
+.view-slider .views-field-body strong.shadow-two-ru {
+    font-size: 60px !important;
+    line-height: 75px;
+    text-shadow: 0px 0px 7px #ff7409;
+    letter-spacing: -3px;
+}
+
+.view-slider .views-field-body strong.shadow-two-ru:first-child {
+    padding: 0 0 0 40px !important;
+}
+
+.view-slider .views-field-body strong.shadow-two-ru:last-child {
+    padding: 0 0 0 40px !important;
+}
 
 #header {
     position: relative;
@@ -1656,6 +1676,14 @@ tr.even {
     left: 498px
 }
 
+.view-slider .views-field-view-node-eng a {
+    top: 373px !important;
+}
+
+.view-slider .views-field-view-node-ru a {
+    top: 373px !important;
+}
+
 .flexslider {
     min-height: 320px
 }
@@ -2239,6 +2267,24 @@ tr.even {
 
 @media only screen and (max-width: 1200px) {
 
+    .view-slider .views-field-view-node-ru a {
+        top: 50% !important;
+    }
+
+    .view-slider .views-field-view-node-eng a {
+        top: 50% !important;
+    }
+
+    .view-slider .views-field-body strong.shadow-two-ru:last-child {
+        padding: 0 !important;
+    }
+    .view-slider .views-field-body strong.shadow-two-ru:first-child {
+        padding: 0 !important;
+    }
+    .view-slider .views-field-body strong.shadow-two-eng:first-child {
+        padding: 0 !important;
+    }
+
     .views-slider-position-two-eng {
         top: 19% !important;
     }
@@ -2255,6 +2301,14 @@ tr.even {
         -o-transition: all 0.5s ease-in;
         transition: all 0.5s ease-in;
         cursor: pointer;
+    }
+
+    .view-slider .views-field-body-ru {
+        padding: 0 0 56px 50px !important;
+    }
+
+    .view-slider .views-field-body-eng {
+        padding: 0 0 56px 50px !important;
     }
 
     .lang {
@@ -2512,7 +2566,7 @@ tr.even {
     }
     .view-slider .views-field-view-node a {
         top: 50%;
-        left: 40%
+        left: 50%
     }
     .lang {
         text-align: center;
