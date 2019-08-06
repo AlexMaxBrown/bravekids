@@ -1892,7 +1892,7 @@ tr.even {
     color: #fff;
     font-size: 1.2em;
     text-align: center;
-    padding: 30px 0px 7px 0
+    padding: 27px 0px 5px 0;
 }
 
 #block-block-6 .content p {
@@ -1900,12 +1900,26 @@ tr.even {
 }
 
 #block-block-6 .content span {
-    font-size: 3.5em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     line-height: normal;
-    padding: 0 0 0 30px
+    padding: 0px 0 0 20px;
+}
+
+.span-one {
+	font-size: 20px;
+	letter-spacing: -1px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 3px !important;
+}
+
+.span-two {
+	font-size: 2em;
+}
+
+.span-tree {
+	font-size: 3.6em;
 }
 
 .view-info-blocks {
@@ -2266,6 +2280,14 @@ tr.even {
 }
 
 @media only screen and (max-width: 1200px) {
+	
+	.span-tree {
+		font-size: 2.4em;
+	}
+	
+	#block-block-6 .content {
+		padding: 40px 0px 10px 0;
+	}
 
     .view-slider .views-field-view-node-ru a {
         top: 50% !important;
@@ -2443,6 +2465,22 @@ tr.even {
     .lang {
         padding: 18px 5px 0px 5px;
     }
+	
+	#block-block-6 .content {
+		padding: 35px 0px 10px 0 !important;
+	}
+	
+	#block-block-6 .content span {
+		padding: 35px 0px 10px 0;
+	}
+	
+	.span-two{
+		font-size: 1.3em;
+	}
+	
+	.span-tree {
+		font-size: 1.7em;
+	}
 
     .wrap {
         width: 100%;
@@ -2504,9 +2542,17 @@ tr.even {
         font-size: 17px
     }
     #block-block-6 .content span {
-        font-size: 1.8em;
-        padding: 0 0 0 30px
+        padding: 0 0 0 15px
     }
+	.span-one {
+		font-size: 18px;
+	}
+	.span-two {
+		font-size: 1.3em;
+	}
+	.span-tree{
+		font-size: 1.5em;
+	}
     .flex-control-nav {
         bottom: 2px
     }
@@ -2530,12 +2576,30 @@ tr.even {
 }
 
 @media only screen and (max-width: 768px) {
+	#block-block-6 .content {
+		padding: 35px 0px 0px 0 !important;
+	}
+	.span-one {
+		display: block;
+	}
+	#block-block-6 .content {
+		padding: 50px 0px 0px 0;
+	}
     .form-inline {
         max-width: 245px;
         margin: auto;
     }
+	.span-two {
+		font-size: 1.2em;
+	}
+	.span-tree {
+		font-size: 1.4em;
+	}
+	#block-block-6 .content span {
+		padding: 0 15px 0 0 !important;
+	}
     #block-block-6 .content p {
-        font-size: 20px
+        font-size: 17px
     }
     .flexslider {
         min-height: 259px
@@ -2618,6 +2682,9 @@ tr.even {
 }
 
 @media only screen and (max-width: 667px) {
+	#block-block-6 .content {
+		padding: 45px 0px 0px 0 !important;
+	}
     .flexslider {
         min-height: 230px
     }
@@ -2625,6 +2692,28 @@ tr.even {
         bottom: -18px;
         right: 19px
     }
+	
+	#block-block-6 .content {
+		padding: 65px 0px 5px 0;
+	}
+	
+	.span-one {
+		display: block;
+		font-size: 16px;
+		padding: 0;
+	}
+	.span-two {
+		padding: 0;
+		font-size: 1.3em;
+	}
+	.span-thee {
+		padding: 0 0 0 10px;
+	}
+	
+	#block-block-6 .content p {
+		font-size: 17px;
+	}
+	
     .view-slider .views-field-body strong {
         font-size: 40px;
         line-height: 105px;
@@ -2657,6 +2746,10 @@ tr.even {
     .form-inline button {
         margin: auto;
     }
+	
+	.span-two {
+		padding: 0 12px 0 0 !important;
+	}
 
     .lang {
         text-align: center;
