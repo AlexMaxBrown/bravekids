@@ -1,5 +1,6 @@
 @import http: //fonts.googleapis.com/css?family=Open+Sans:700;@import http://fonts.googleapis.com/css?family=Open+Sans:400;
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 body#body {
     background: url(../images/bg.gif);
     color: #87bff3;
@@ -3180,13 +3181,13 @@ tr.even {
     border-radius: 15px;
     font-size:2em;
     color: #2577ab;
-    font-family: 'Shadows Into Light Two', cursive
-    font-size:1em;
-    line-height: 28px;
+    font-family: 'Lobster', cursive;
+    font-size:1.2em;
+    
 }
 .table-responsive td:nth-child(odd) {
     color:#fff;
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Lobster', cursive;
     white-space: nowrap;
     font-weight: bold;
     font-size:2em;
