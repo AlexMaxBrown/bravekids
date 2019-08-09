@@ -2842,6 +2842,9 @@ tr.even {
         top: 75% !important;
         left: 43% !important;
     }
+    .views-slider-position-two {
+        top: 50% !important;
+    }
 }
 
 @media only screen and (max-width: 568px) {
@@ -2953,7 +2956,7 @@ tr.even {
     }
     .view-slider .views-field-view-node a {
         top: 67%;
-        left: 55%
+        left: 50%
     }
     #block-block-6 .content {
         padding: 57px 0 3px;
@@ -2997,6 +3000,9 @@ tr.even {
     }
     #block-block-6 .content p {
         font-size: 15px
+    }
+    .view-slider .views-field-view-node-eng a {
+        left: 47% !important;
     }
 }
 
