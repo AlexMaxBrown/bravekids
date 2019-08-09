@@ -2707,6 +2707,23 @@ tr.even {
 }
 
 @media only screen and (max-width: 736px) {
+    .views-slider-position-two {
+        top: 34% !important;
+    }
+    .view-slider .views-field-view-node-ru a {
+        top: 75% !important;
+        left: 42% !important;
+    }
+    .views-slider-position-two-eng {
+        top: 53% !important;
+    }
+    .views-slider-position-two-ru {
+        top: 43% !important;
+    }
+    .view-slider .views-field-view-node-eng a {
+        top: 75% !important;
+        left: 43% !important;
+    }
     .flexslider {
         min-height: 250px
     }
@@ -2967,6 +2984,7 @@ tr.even {
     }
     .view-slider .views-field-view-node-eng a {
         top: 68% !important;
+        left: 47% !important;
     }
     .views-slider-position-two-eng {
         top: 56% !important;
